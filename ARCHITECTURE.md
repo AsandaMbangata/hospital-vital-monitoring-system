@@ -74,3 +74,112 @@ C4Context
     Rel(vital_system, database, "Stores/retrieves data", "SQL via Prisma")
 
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+
+C4Container
+    title Container Diagram - Hospital Vital Monitoring System
+
+    Person(patient, "Patient", "Web browser")
+    Person(doctor, "Doctor", "Web browser")
+    Person(admin, "Administrator", "Web browser")
+
+    System_Boundary(system_boundary, "Hospital Vital Monitoring System") {
+        Container(react_app, "React Web Application", "React 18 + Vite", "Provides interactive UI for all users")
+        Container(express_api, "Express API Server", "Node.js + Express", "REST API for backend operations")
+        Container(auth_module, "Authentication Module", "JWT + bcryptjs", "User authentication and authorization")
+        Container(vital_service, "Vital Data Service", "Node.js + Prisma", "CRUD operations for vital signs")
+        Container(alert_service, "Alert Service", "Node.js", "Monitors vitals and triggers alerts")
+        ContainerDb(postgres_db, "PostgreSQL Database", "PostgreSQL 14+", "Stores all system data")
+    }
+
+    System_Ext(sendgrid, "SendGrid Email Service", "SendGrid API", "Delivers alert emails")
+
+    Rel(patient, react_app, "Uses", "HTTPS")
+    Rel(doctor, react_app, "Uses", "HTTPS")
+    Rel(admin, react_app, "Uses", "HTTPS")
+    Rel(react_app, express_api, "Calls REST API", "HTTPS/JSON")
+    Rel(express_api, auth_module, "Authenticates", "Internal")
+    Rel(express_api, vital_service, "Routes data", "Internal")
+    Rel(express_api, alert_service, "Triggers alerts", "Internal")
+    Rel(vital_service, postgres_db, "Reads/Writes", "SQL")
+    Rel(auth_module, postgres_db, "Reads/Writes", "SQL")
+    Rel(alert_service, sendgrid, "Sends emails", "API")
+    Rel(alert_service, postgres_db, "Reads thresholds", "SQL")
+
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+
+C4Component
+     Level 3 code
+    title Component Diagram - React Web Application
+
+    Container_Boundary(react_app, "React Web Application") {
+        Component(login, "Login Component", "React", "User authentication UI")
+        Component(patient_dash, "Patient Dashboard", "React", "Vital entry form")
+        Component(doctor_dash, "Doctor Dashboard", "React", "Patient monitoring")
+        Component(api_client, "API Client", "Axios", "HTTP communication")
+    }
+
+    Rel(login, api_client, "Uses")
+    Rel(patient_dash, api_client, "Uses")
+    Rel(doctor_dash, api_client, "Uses")
+
+classDiagram
+Level 4
+    class User {
+        +string id
+        +string email
+        +string password
+        +string role
+        +login()
+    }
+
+    class Patient {
+        +string patientId
+        +string name
+        +logVital()
+        +getHistory()
+    }
+
+    class Doctor {
+        +string doctorId
+        +string name
+        +viewPatients()
+        +receiveAlert()
+    }
+
+    class VitalSign {
+        +string vitalId
+        +float bloodPressure
+        +int heartRate
+        +float temperature
+        +DateTime timestamp
+        +isAbnormal()
+    }
+
+    class Alert {
+        +string alertId
+        +string message
+        +DateTime createdAt
+        +sendEmail()
+    }
+
+    User <|-- Patient
+    User <|-- Doctor
+    Patient --> VitalSign : logs
+    Doctor --> VitalSign : views
+    VitalSign --> Alert : triggers
+
+flowchart LR
+    A[Patient Browser] -->|HTTPS| B[React Web App]
+    B -->|REST API| C[Express API]
+    C -->|Auth| D[Auth Service]
+    C -->|Store| E[Vital Service]
+    E -->|SQL| F[(PostgreSQL)]
+    E -->|Check| G[Alert Service]
+    G -->|Email| H[SendGrid]
+    H -->|Notify| I[Doctor Browser]
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#e8f5e9
+    style F fill:#ffebee
+    style H fill:#fff9c4
