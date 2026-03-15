@@ -74,7 +74,8 @@ C4Context
     Rel(vital_system, database, "Stores/retrieves data", "SQL via Prisma")
 
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
-
+```
+```mermaid
 C4Container
     title Container Diagram - Hospital Vital Monitoring System
 
@@ -106,9 +107,9 @@ C4Container
     Rel(alert_service, postgres_db, "Reads thresholds", "SQL")
 
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
-
+    ```
+ ```mermaid
 C4Component
-     Level 3 code
     title Component Diagram - React Web Application
 
     Container_Boundary(react_app, "React Web Application") {
@@ -121,9 +122,9 @@ C4Component
     Rel(login, api_client, "Uses")
     Rel(patient_dash, api_client, "Uses")
     Rel(doctor_dash, api_client, "Uses")
-
+```
+ ```mermaid
 classDiagram
-Level 4
     class User {
         +string id
         +string email
@@ -167,7 +168,8 @@ Level 4
     Patient --> VitalSign : logs
     Doctor --> VitalSign : views
     VitalSign --> Alert : triggers
-
+```
+```mermaid
 flowchart LR
     A[Patient Browser] -->|HTTPS| B[React Web App]
     B -->|REST API| C[Express API]
@@ -183,3 +185,4 @@ flowchart LR
     style C fill:#e8f5e9
     style F fill:#ffebee
     style H fill:#fff9c4
+```
