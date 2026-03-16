@@ -52,7 +52,7 @@ This project is feasible for individual development over one semester because:
 
 ## 2. C4 Level 1: Context Diagram
 
-The Context Diagram shows the system as a single box and its relationships with external actors and systems. This is the highest level of abstraction.
+The Context Diagram shows the system as a single box and its relationships with external actors and systems.
 
 ```mermaid
 C4Context
@@ -74,9 +74,8 @@ C4Context
     Rel(vital_system, database, "Stores/retrieves data", "SQL via Prisma")
 
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
-```
-```mermaid
-C4Container
+
+    C4Container
     title Container Diagram - Hospital Vital Monitoring System
 
     Person(patient, "Patient", "Web browser")
@@ -107,82 +106,4 @@ C4Container
     Rel(alert_service, postgres_db, "Reads thresholds", "SQL")
 
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
-    ```
- ```mermaid
-C4Component
-    title Component Diagram - React Web Application
 
-    Container_Boundary(react_app, "React Web Application") {
-        Component(login, "Login Component", "React", "User authentication UI")
-        Component(patient_dash, "Patient Dashboard", "React", "Vital entry form")
-        Component(doctor_dash, "Doctor Dashboard", "React", "Patient monitoring")
-        Component(api_client, "API Client", "Axios", "HTTP communication")
-    }
-
-    Rel(login, api_client, "Uses")
-    Rel(patient_dash, api_client, "Uses")
-    Rel(doctor_dash, api_client, "Uses")
-```
- ```mermaid
-classDiagram
-    class User {
-        +string id
-        +string email
-        +string password
-        +string role
-        +login()
-    }
-
-    class Patient {
-        +string patientId
-        +string name
-        +logVital()
-        +getHistory()
-    }
-
-    class Doctor {
-        +string doctorId
-        +string name
-        +viewPatients()
-        +receiveAlert()
-    }
-
-    class VitalSign {
-        +string vitalId
-        +float bloodPressure
-        +int heartRate
-        +float temperature
-        +DateTime timestamp
-        +isAbnormal()
-    }
-
-    class Alert {
-        +string alertId
-        +string message
-        +DateTime createdAt
-        +sendEmail()
-    }
-
-    User <|-- Patient
-    User <|-- Doctor
-    Patient --> VitalSign : logs
-    Doctor --> VitalSign : views
-    VitalSign --> Alert : triggers
-```
-```mermaid
-flowchart LR
-    A[Patient Browser] -->|HTTPS| B[React Web App]
-    B -->|REST API| C[Express API]
-    C -->|Auth| D[Auth Service]
-    C -->|Store| E[Vital Service]
-    E -->|SQL| F[(PostgreSQL)]
-    E -->|Check| G[Alert Service]
-    G -->|Email| H[SendGrid]
-    H -->|Notify| I[Doctor Browser]
-    
-    style A fill:#e1f5fe
-    style B fill:#fff3e0
-    style C fill:#e8f5e9
-    style F fill:#ffebee
-    style H fill:#fff9c4
-```
