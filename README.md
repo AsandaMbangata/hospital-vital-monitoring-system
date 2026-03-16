@@ -2,41 +2,71 @@
 
 ## Introduction
 
-Welcome to the **Hospital Vital Monitoring System** repository. This is an individual software engineering project for a Postgraduate Diploma in Software Engineering.
+**Hospital Vital Monitoring System**
+The goal of this system is to provide a simple platform for monitoring patient vital signs remotely and allowing healthcare providers to track patient health data more effectively.
 
-### What This System Will Do
+---
+
+## What This System Will Do
 
 Once completed, this system will enable:
-- **Patients** to register and log their vital signs (blood pressure, heart rate, temperature, weight)
-- **Doctors** to view patient data through a dashboard
-- **Automated alerts** when vital signs exceed normal thresholds
+
+- **Patients** to register and log their vital signs  
+  (blood pressure, heart rate, temperature, weight)
+
+- **Doctors** to view patient data through an interactive dashboard
+
+- **Automated alerts** when vital signs exceed safe thresholds
+
 - **Health reports** for tracking patient progress over time
 
-### Project Structure
+This helps reduce unnecessary hospital visits while still allowing doctors to monitor patient health.
+
+---
+
+## Project Structure
 
 | File | Description |
-|------|-------------|
+|-----|-------------|
 | `README.md` | Project overview and navigation |
 | `SPECIFICATION.md` | Complete system specification document |
 | `ARCHITECTURE.md` | C4 architectural diagrams |
-| `src/` | Source code (to be developed) |
+| `src/` | Source code (to be developed later) |
 | `docs/` | Additional documentation |
 
-### Quick Links
+---
 
-- 📋 [System Specification](SPECIFICATION.md)
+## Documentation
+
+- 📋 [System Specification](SPECIFICATION.md)  
 - 🏗️ [System Architecture](ARCHITECTURE.md)
 
-### Development Status
+---
+
+## Development Status
 
 | Phase | Status |
-|-------|--------|
+|------|--------|
 | Specification | ✅ Complete |
 | Architecture | ✅ Complete |
 | Development | 🔄 In Progress |
 | Testing | ⏳ Pending |
 | Deployment | ⏳ Pending |
 
-### Author
+---
 
-**Asanda Mbangata**  
+## Planned Technologies
+
+The following technologies may be used during development:
+
+- **Frontend:** React  
+- **Backend:** Node.js / Express  
+- **Database:** PostgreSQL  
+- **Authentication:** JWT  
+- **Version Control:** GitHub  
+
+---
+
+## Author
+
+**Asanda Mbangata**
