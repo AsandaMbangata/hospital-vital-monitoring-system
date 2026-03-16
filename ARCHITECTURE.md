@@ -76,6 +76,8 @@ C4Context
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
 ```
 
+## 2. C4 Level 2: Container Diagram
+
 ```mermaid
 C4Container
     title Container Diagram - Hospital Vital Monitoring System
@@ -109,6 +111,9 @@ C4Container
 
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
 ```
+
+## 2. C4 Level 3: Component Diagram
+
 ```mermaid
 C4Component
     title Component Diagram - React Web Application
@@ -124,6 +129,8 @@ C4Component
     Rel(patient_dash, api_client, "Uses")
     Rel(doctor_dash, api_client, "Uses")
 ```
+
+## 2. C4 Level 4: Class Diagram
 
 ```mermaid
 classDiagram
@@ -171,6 +178,9 @@ classDiagram
     Doctor --> VitalSign : views
     VitalSign --> Alert : triggers
 ```
+
+## 2. C4 Level 5: Flowchart Diagram
+
 ```mermaid
 flowchart LR
     A[Patient Browser] -->|HTTPS| B[React Web App]
