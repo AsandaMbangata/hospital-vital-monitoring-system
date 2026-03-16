@@ -1,4 +1,4 @@
-# 🏥 Hospital Vital Monitoring System
+# Hospital Vital Monitoring System
 
 ## Introduction
 
@@ -38,8 +38,8 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 
 ## Documentation
 
-- 📋 [System Specification](SPECIFICATION.md)  
-- 🏗️ [System Architecture](ARCHITECTURE.md)
+-  [System Specification](SPECIFICATION.md)  
+-  [System Architecture](ARCHITECTURE.md)
 
 ---
 
