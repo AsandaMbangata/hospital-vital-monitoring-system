@@ -1,4 +1,4 @@
-# 🏗️ System Architecture Document
+# System Architecture Document
 
 ## 1. Introduction
 
@@ -35,11 +35,11 @@ This project is feasible for individual development over one semester because:
 | **Time** | Incremental development: auth → data entry → dashboard → alerts → reports |
 
 **Out of Scope (This Semester):**
-- ❌ Medical device integration (automated vital capture)
-- ❌ Full Electronic Health Records (EHR) system
-- ❌ Billing and insurance processing
-- ❌ Mobile application (web-first approach)
-- ❌ Multi-hospital deployment
+-  Medical device integration (automated vital capture)
+-  Full Electronic Health Records (EHR) system
+-  Billing and insurance processing
+-  Mobile application (web-first approach)
+-  Multi-hospital deployment
 
 **Minimum Viable Product (MVP):**
 1. User authentication (patient/doctor roles)
