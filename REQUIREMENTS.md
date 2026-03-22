@@ -14,6 +14,7 @@ The system allows patients to record vital signs remotely, doctors to monitor pa
 The system is a web-based application designed to improve remote healthcare monitoring and reduce unnecessary hospital visits.
 
 ## 1. Functional Requirements
+These functional requirements are derived directly from stakeholder concerns identified in the stakeholder analysis.
 
 | ID | Requirement | Acceptance Criteria | Stakeholder |
 |----|-------------|---------------------|-------------|
