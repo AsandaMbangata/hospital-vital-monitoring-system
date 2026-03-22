@@ -42,6 +42,7 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 -  [System Architecture](ARCHITECTURE.md)
 -  [Stakeholder Analysis](STAKEHOLDERS.md)
 -  [System Requirements](REQUIREMENTS.md)
+-  [Reflection](REFLECTION.md)
 
 ---
 
