@@ -2,9 +2,16 @@
 
 ## Project: Hospital Vital Monitoring System
 
-This document defines functional and non-functional requirements for the Hospital Vital Monitoring System, traceable to stakeholder needs.
+## Introduction
 
----
+### Purpose
+This document defines the functional and non-functional requirements for the Hospital Vital Monitoring System based on stakeholder needs.
+
+### Scope
+The system allows patients to record vital signs remotely, doctors to monitor patients, and administrators to manage the system.
+
+### Overview
+The system is a web-based application designed to improve remote healthcare monitoring and reduce unnecessary hospital visits.
 
 ## 1. Functional Requirements
 
