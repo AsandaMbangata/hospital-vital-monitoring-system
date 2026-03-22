@@ -96,4 +96,4 @@ The system is a web-based application designed to improve remote healthcare moni
 | FR-12 | Insurance Providers: Health records | Low |
 | NFR-SEC01-04 | IT Staff, Regulatory: Security | High |
 | NFR-P01-03 | Patients, Doctors: Performance | High |
-| NFR-S01-02 | IT Staff, Administrators: Scalability | Medium |
+| NFR-S01-02 | IT Support, Administrators: Scalability | Medium |
