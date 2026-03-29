@@ -91,6 +91,7 @@ Family members can access patient health information only after the patient gran
 Email Service
 This is an external supporting actor. It is used by the system to deliver alert notifications when abnormal readings are detected.
 
+
 Relationships between actors and use cases
 
 The diagram shows direct associations between actors and the use cases they perform. It also uses <<include>> relationships for compulsory sub-processes:
