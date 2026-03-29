@@ -1,3 +1,5 @@
+**Use Case Specifications**
+
 Use Case-01 Register Account
 
 Primary Actor: Patient
