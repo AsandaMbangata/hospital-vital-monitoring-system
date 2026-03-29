@@ -9,60 +9,63 @@ This document contains use case diagrams and detailed specifications for the Hos
 ## 1. Use Case Diagram
 
 ```mermaid
-graph TB
-    subgraph Actors
-        P[👤 Patient]
-        D[👨‍⚕️ Doctor]
-        N[👩‍⚕️ Nurse]
-        A[🔧 Administrator]
-        F[👪 Family Member]
-        ES[📧 Email Service]
+flowchart LR
+    %% Actors
+    Patient[Patient]
+    Doctor[Doctor]
+    Nurse[Nurse]
+    Admin[Administrator]
+    Family[Family Member]
+    Email[Email Service]
+
+    %% System Boundary
+    subgraph HVMS[Hospital Vital Monitoring System]
+        UC1([Register Account])
+        UC2([Log In])
+        UC3([Log Vital Signs])
+        UC4([View Vital History])
+        UC5([View Patient Dashboard])
+        UC6([View Patient Vital Trends])
+        UC7([Detect Abnormal Readings])
+        UC8([Send Alert Notification])
+        UC9([Manage User Accounts])
+        UC10([Maintain Audit Logs])
+        UC11([Grant Family Access])
+        UC12([Generate Monthly Health Report])
     end
 
-    subgraph UseCases
-        UC1[Register Account]
-        UC2[Login]
-        UC3[Log Vital Signs]
-        UC4[View Vital History]
-        UC5[View Patient Dashboard]
-        UC6[View Patient Trends]
-        UC7[Receive Alerts]
-        UC8[Configure Thresholds]
-        UC9[Manage Users]
-        UC10[Grant Family Access]
-        UC11[Generate Report]
-        UC12[View Audit Logs]
-    end
+    %% Associations
+    Patient --- UC1
+    Patient --- UC2
+    Patient --- UC3
+    Patient --- UC4
+    Patient --- UC11
+    Patient --- UC12
 
-    P --> UC1
-    P --> UC2
-    P --> UC3
-    P --> UC4
-    P --> UC10
-    P --> UC11
+    Doctor --- UC2
+    Doctor --- UC5
+    Doctor --- UC6
+    Doctor --- UC8
 
-    D --> UC2
-    D --> UC5
-    D --> UC6
-    D --> UC7
-    D --> UC8
+    Nurse --- UC2
+    Nurse --- UC5
+    Nurse --- UC6
 
-    N --> UC2
-    N --> UC5
-    N --> UC7
+    Admin --- UC2
+    Admin --- UC9
+    Admin --- UC10
 
-    A --> UC2
-    A --> UC9
-    A --> UC12
+    Family --- UC2
+    Family --- UC4
 
-    F --> UC1
-    F --> UC4
+    Email --- UC8
 
-    UC7 -.-> ES
-
-    style P fill:#e1f5fe
-    style D fill:#e8f5e9
-    style N fill:#fff3e0
-    style A fill:#f3e5f5
-    style F fill:#ffebee
-    style ES fill:#fff9c4
+    %% Include relationships
+    UC3 -. <<include>> .-> UC7
+    UC7 -. <<include>> .-> UC8
+    UC9 -. <<include>> .-> UC10
+    UC11 -. <<include>> .-> UC10
+    UC3 -. <<include>> .-> UC10
+    UC4 -. <<include>> .-> UC10
+    UC5 -. <<include>> .-> UC10
+    UC12 -. <<include>> .-> UC10
