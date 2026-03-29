@@ -1,0 +1,151 @@
+Use Case-01 Register Account
+
+Primary Actor: Patient
+Description: Allows a patient to create an account using email, password, and profile information.
+Preconditions: User does not already have an account.
+Postconditions: Patient account is created and verification email is sent.
+
+Basic Flow
+Patient opens the registration page.
+Patient enters email, password, and profile details.
+System validates the input.
+System creates the account.
+System sends a verification email.
+Patient sees a registration success message.
+Alternative Flows
+3a. If required fields are missing, the system displays validation errors.
+3b. If password does not meet complexity rules, the system rejects submission.
+4a. If email already exists, the system shows an error message.
+
+Use Case-02 Log In
+
+Actor: Patient / Doctor / Nurse / Administrator / Family Member
+Description: Allows authorized users to access the system securely.
+Preconditions: User account exists and is active.
+Postconditions: User is authenticated and redirected to the appropriate dashboard.
+
+Basic Flow
+User opens the login page.
+User enters email and password.
+System validates credentials.
+System creates a session or token.
+System redirects the user to the correct dashboard.
+Alternative Flows
+3a. Invalid credentials cause an error message.
+3b. Too many failed attempts temporarily lock the account.
+3c. If account is inactive, access is denied.
+
+Use Case-03 Log Vital Signs
+
+Actor: Patient
+Description: Allows a patient to record blood pressure, heart rate, temperature, and weight.
+Preconditions: Patient is logged in.
+Postconditions: Vital signs are saved and checked for abnormalities.
+
+Basic Flow
+Patient navigates to the vital entry form.
+Patient enters blood pressure, heart rate, temperature, and weight.
+Patient submits the form.
+System validates the values.
+System stores the vital record.
+System checks whether the reading is abnormal.
+System confirms successful submission.
+Alternative Flows
+4a. If any field contains invalid data, the system shows validation errors.
+5a. If the database is unavailable, the system displays a submission failure message.
+6a. If abnormal values are found, the system triggers alert processing.
+
+Use Case-04 View Vital History
+
+Actor: Patient
+Description: Allows a patient to view previous vital records over time.
+Preconditions: Patient is logged in.
+Postconditions: Vital history is displayed in chronological order.
+
+Basic Flow
+Patient opens the history page.
+System retrieves the patient’s stored vital records.
+Patient optionally applies a date range filter.
+System displays records in chronological order.
+Patient may export the report to PDF.
+Alternative Flows
+2a. If no records exist, the system displays “No history available.”
+3a. If the date range is invalid, the system asks the patient to correct it.
+5a. If PDF generation fails, the system shows an error.
+
+Use Case-05 View Patient Dashboard
+
+Actor: Doctor
+Supporting Actor: Nurse
+Description: Displays all assigned patients and their latest status.
+Preconditions: Doctor or nurse is logged in with appropriate permissions.
+Postconditions: Dashboard with patient summary data is displayed.
+
+Basic Flow
+Doctor opens the dashboard.
+System retrieves assigned patients.
+System displays patient name, latest reading, and status.
+Doctor searches or filters the list if needed.
+Doctor selects a patient for further review.
+Alternative Flows
+2a. If no patients are assigned, the system displays an empty-state message.
+3a. If data loading fails, the system shows an error message.
+4a. If no search results match, the system informs the user.
+
+Use Case-06 View Patient Vital Trends
+
+Actor: Doctor
+Supporting Actor: Nurse
+Description: Allows clinical staff to inspect a patient’s vital trends using charts.
+Preconditions: User is logged in and has permission to view the patient.
+Postconditions: Trend charts are displayed for the selected patient.
+
+Basic Flow
+Doctor selects a patient from the dashboard.
+System retrieves the patient’s vital history.
+Doctor selects a time range such as 7, 30, or 90 days.
+System displays charts for each vital type.
+Abnormal readings are highlighted.
+Alternative Flows
+2a. If no data exists for the chosen patient, the system shows a no-data message.
+3a. If the selected range contains no records, the system displays an empty chart state.
+
+Use Case-07 Detect Abnormal Readings and Send Alerts
+
+Actor: System
+Supporting Actor: Doctor, Email Service
+Description: Automatically evaluates submitted vitals and sends alerts when thresholds are exceeded.
+Preconditions: A patient has submitted new vital data. Thresholds are configured.
+Postconditions: Alert status is recorded and notification is sent when required.
+
+Basic Flow
+System receives newly submitted vital data.
+System compares values against configured thresholds.
+System classifies the reading as Normal, Warning, or Critical.
+If Warning or Critical, the system creates an alert record.
+System sends an email alert to the responsible doctor.
+System records the alert action in the audit log.
+Alternative Flows
+2a. If no thresholds are configured, default thresholds are used.
+5a. If email delivery fails, the system retries and logs the failure.
+3a. If reading is Normal, no alert is sent.
+
+Use Case-08 Manage User Accounts
+
+Actor: Administrator
+Description: Allows administrators to activate, deactivate, approve, or modify user accounts.
+Preconditions: Administrator is logged in.
+Postconditions: User account status is updated and the action is logged.
+
+Basic Flow
+Administrator opens user management.
+System displays all user accounts.
+Administrator selects a user account.
+Administrator performs an action such as approve, activate, deactivate, or role update.
+System saves the change.
+System records the action in the audit log.
+System displays a success message.
+Alternative Flows
+2a. If no accounts are found, the system displays an empty state.
+5a. If update fails, the system displays an error.
+4a. If the administrator lacks required privileges, the action is den
