@@ -42,3 +42,47 @@ Backlog Justification
 Must-have stories support the MVP and core functionality (registration, login, vitals, alerts).
 Should-have stories improve system usability and administration.
 Could-have stories provide additional value but are not required for the initial release.
+
+3. Sprint Planning
+Sprint Goal
+
+Implement the core functionality of the system by enabling user authentication, vital sign capture, abnormal detection, and basic doctor monitoring.
+
+Selected User Stories
+US-001 Register account
+US-002 Login
+US-003 Log vitals
+US-005 Dashboard
+US-007 Detect abnormal readings
+US-008 Send alerts
+
+Sprint Backlog Table 
+
+| Task ID | Description | Assigned To | Hours | Status |
+|---------|------------|-------------|-------|--------|
+| T-001 | Design registration UI | Developer | 6 | To Do |
+| T-002 | Build registration API | Developer | 8 | To Do |
+| T-003 | Implement validation logic | Developer | 6 | To Do |
+| T-004 | Design login UI | Developer | 4 | To Do |
+| T-005 | Implement authentication | Developer | 8 | To Do |
+| T-006 | Build vital entry form | Developer | 6 | To Do |
+| T-007 | Save vital data logic | Developer | 8 | To Do |
+| T-008 | Create dashboard UI | Developer | 6 | To Do |
+| T-009 | Fetch patient data API | Developer | 8 | To Do |
+| T-010 | Implement abnormal detection | Developer | 8 | To Do |
+| T-011 | Integrate email alerts | Developer | 6 | To Do |
+| T-012 | Write tests | Developer | 10 | To Do |
+
+Reflection
+
+Working on Assignment 6 showed me that Agile planning is not only about organizing development work, but also about managing uncertainty, resistance, and self-discipline. Since I am working on this project individually, I had to take on multiple roles at once, including product owner, scrum master, analyst, and developer. This created an internal challenge because each role requires a different mindset.
+
+One of the biggest challenges was prioritization. Many features seemed equally important, but Agile required focusing only on the most critical ones for the MVP. I had to accept that some useful features needed to be postponed. This was difficult because I wanted the system to feel complete, but I learned that delivering value early is more important than completeness.
+
+Estimation was also challenging. Without a team, I had to assign story points on my own. Some tasks appeared simple but involved hidden complexity, while others seemed large but could be simplified. This made estimation feel uncertain and required careful judgment.
+
+Another difficulty was aligning Agile planning with the structured work from previous assignments. Earlier assignments focused on detailed requirements and system design, while Agile required breaking that work into smaller, deliverable pieces. This created tension because not all requirements could fit into one sprint.
+
+On a personal level, I experienced resistance when starting the assignment because it felt overwhelming. However, once I began breaking the work into user stories and tasks, it became easier to manage. This showed me that Agile is not just a development method but also a way to manage personal productivity.
+
+Overall, this assignment helped me understand the importance of prioritization, estimation, and focusing on value. It also showed me how Agile can transform complex requirements into manageable tasks, making development more structured and achievable.
