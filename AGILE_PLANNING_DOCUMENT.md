@@ -19,3 +19,26 @@ This document is based on the stakeholder analysis, system requirements, and use
 | US-010 | As an admin, I want audit logs so that actions are traceable. | Logs include user, action, timestamp; exportable. | Medium |
 | US-011 | As a patient, I want to grant family access so that others can support my care. | Access can be granted and revoked; invitation sent. | Low |
 | US-012 | As a patient, I want monthly reports so that I can review my health. | PDF generated within 30 seconds; includes vitals and trends. | Medium |
+
+2. Product Backlog
+
+| Story ID | User Story | MoSCoW | Story Points | Dependencies |
+|----------|-----------|--------|--------------|--------------|
+| US-001 | Register account | Must-have | 3 | None |
+| US-002 | Login | Must-have | 3 | US-001 |
+| US-003 | Log vitals | Must-have | 5 | US-002 |
+| US-004 | View history | Must-have | 3 | US-003 |
+| US-005 | Dashboard | Must-have | 5 | US-002 |
+| US-007 | Detect abnormal readings | Must-have | 5 | US-003 |
+| US-008 | Send alerts | Must-have | 3 | US-007 |
+| US-006 | View trends | Should-have | 5 | US-005 |
+| US-009 | Manage users | Should-have | 3 | US-001 |
+| US-010 | Audit logs | Should-have | 3 | US-002 |
+| US-011 | Family access | Could-have | 2 | US-004 |
+| US-012 | Reports | Could-have | 3 | US-004 |
+
+Backlog Justification
+
+Must-have stories support the MVP and core functionality (registration, login, vitals, alerts).
+Should-have stories improve system usability and administration.
+Could-have stories provide additional value but are not required for the initial release.
