@@ -109,8 +109,8 @@ Additional columns such as **Testing** and **Blocked** were introduced to improv
 
 ### Screenshot
 
-![Kanban Board](screenshots/kanban_board.png)
-![Kanban Board](screenshots/kanban_board_Labels.png)
+![Kanban Board](screenshots/Custom Kanban board.png)
+![Kanban Board](screenshots/Custom Kanban board_Labels.png)
 
 ---
 
