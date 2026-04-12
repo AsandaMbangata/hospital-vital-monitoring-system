@@ -108,8 +108,8 @@ Additional columns such as **Testing** and **Blocked** were introduced to improv
 - The board visually tracks task progress across all stages  
 
 ### Screenshot
-![Kanban Board](screenshots/Custom Kanban board.png)
-![Kanban Board](screenshots/Custom Kanban board_Labels.png)
+![Kanban Board](screenshots/Custom_Kanban_board.png)
+![Kanban Board](screenshots/Custom_Kanban_board_Labels.png)
 ---
 
 ## Author
