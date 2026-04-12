@@ -38,6 +38,7 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 | `REFLECTION.md` | Assignment 4 reflection |
 | `TEMPLATE_ANALYSIS.md` | Assignment 7: Template comparison and selection |
 | `KANBAN_EXPLANATION.md` | Assignment 7: Kanban explanation |
+| `REFLECTION_ASSIGNMENT7.md` | Assignment 7: Reflection |
 | `src/` | Source code (to be developed later) |
 | `docs/` | Additional documentation |
 
@@ -55,6 +56,7 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 -  [Template Analysis](TEMPLATE_ANALYSIS.md)
 -  [Kanban Explanation](KANBAN_EXPLANATION.md)
 -  [Reflection](REFLECTION.md)
+-  [Assignment_7_Reflection ](REFLECTION_ASSIGNMENT7.md)
 
 ---
 
