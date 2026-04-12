@@ -36,6 +36,8 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 | `USE_CASE_AND_TEST_DOCUMENT.md` | Assignment 5: Use cases and test cases |
 | `AGILE_PLANNING_DOCUMENT.md` | Assignment 6: Agile planning |
 | `REFLECTION.md` | Assignment 4 reflection |
+| `TEMPLATE_ANALYSIS.md` | Assignment 7: Template comparison and selection |
+| `KANBAN_EXPLANATION.md` | Assignment 7: Kanban explanation |
 | `src/` | Source code (to be developed later) |
 | `docs/` | Additional documentation |
 
@@ -52,6 +54,7 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 -  [Agile Planning](AGILE_PLANNING_DOCUMENT.md)
 -  [Template Analysis](TEMPLATE_ANALYSIS.md)
 -  [Kanban Explanation](KANBAN_EXPLANATION.md)
+-  [Reflection](REFLECTION.md)
 
 ---
 
