@@ -80,7 +80,37 @@ The following technologies may be used during development:
 - **Backend:** Node.js / Express  
 - **Database:** PostgreSQL  
 - **Authentication:** JWT  
-- **Version Control:** GitHub  
+- **Version Control:** GitHub
+
+## Kanban Board (Assignment 7)
+
+The Kanban board was created using GitHub Projects to support Agile workflow management and task tracking.
+
+### Customization Choices
+
+The board was customized to better reflect a real-world software development workflow:
+
+- **Backlog**: Stores all identified tasks that are not yet prioritized  
+- **To Do**: Tasks selected for the current sprint  
+- **In Progress**: Tasks currently being developed  
+- **Testing**: Added to ensure features are validated before completion  
+- **Blocked**: Added to identify tasks that cannot proceed due to dependencies or issues  
+- **In Review**: Tasks being reviewed before completion  
+- **Done**: Completed tasks  
+
+Additional columns such as **Testing** and **Blocked** were introduced to improve workflow visibility and align with Agile practices.
+
+### Task Management
+
+- User stories from Assignment 6 were added as GitHub Issues  
+- Issues were labeled using `feature` 
+- Tasks were assigned using GitHub’s assignment feature  
+- The board visually tracks task progress across all stages  
+
+### Screenshot
+
+![Kanban Board](screenshots/kanban_board.png)
+![Kanban Board](screenshots/kanban_board_Labels.png)
 
 ---
 
