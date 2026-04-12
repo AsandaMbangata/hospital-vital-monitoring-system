@@ -50,6 +50,8 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 -  [Use Case & Test Document](USE_CASE_AND_TEST_DOCUMENT.md)
 -  [Reflection](REFLECTION.md)
 -  [Agile Planning](AGILE_PLANNING_DOCUMENT.md)
+-  [Template Analysis](TEMPLATE_ANALYSIS.md)
+-  [Kanban Explanation](KANBAN_EXPLANATION.md)
 
 ---
 
