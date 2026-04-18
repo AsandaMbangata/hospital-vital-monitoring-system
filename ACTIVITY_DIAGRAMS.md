@@ -89,7 +89,7 @@ flowchart TD
     E --> F[View Patient Details]
     F --> G[End]
 ```
-### Explanation
+### Doctor Dashboard Workflow Explanation
 
 This diagram illustrates how doctors interact with the system dashboard. After logging in, the doctor can view a list of assigned patients along with their latest vital readings.
 
