@@ -35,9 +35,9 @@ stateDiagram-v2
     Validated --> Abnormal : Exceeds threshold
 
     Abnormal --> AlertTriggered : Alert generated
-    ```
+```
 
-    ```mermaid
+```mermaid
 stateDiagram-v2
     [*] --> Generated
 
@@ -46,6 +46,7 @@ stateDiagram-v2
 
     Acknowledged --> Resolved : Issue addressed|
 ```
+
 ```mermaid
 stateDiagram-v2
     [*] --> Registered
