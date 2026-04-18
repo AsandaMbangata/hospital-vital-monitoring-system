@@ -11,7 +11,7 @@ stateDiagram-v2
     Active --> Deleted : User deletes account
 
 
-### User Account State Diagram Explanation
+    ### User Account State Diagram Explanation
 
 The User Account object transitions from Unregistered to Registered when a user signs up (FR-01). After email verification, the account becomes Verified and can move to Active upon successful login.
 
