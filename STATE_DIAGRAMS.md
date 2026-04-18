@@ -24,4 +24,64 @@ This diagram supports:
 - FR-01: Patient registration
 - FR-09: Admin account management
 
+```mermaid
+stateDiagram-v2
+    [*] --> Created
 
+    Created --> Submitted : User submits vitals
+    Submitted --> Validated : System checks data
+
+    Validated --> Normal : Within threshold
+    Validated --> Abnormal : Exceeds threshold
+
+    Abnormal --> AlertTriggered : Alert generated
+    ```
+
+    ```mermaid
+stateDiagram-v2
+    [*] --> Generated
+
+    Generated --> Sent : Email sent
+    Sent --> Acknowledged : Doctor views alert
+
+    Acknowledged --> Resolved : Issue addressed|
+```
+```mermaid
+stateDiagram-v2
+    [*] --> Registered
+
+    Registered --> PendingApproval : Credentials submitted
+    PendingApproval --> Approved : Admin verifies
+
+    Approved --> Active : Login
+    Active --> Suspended : Admin action
+```
+
+```mermaid
+stateDiagram-v2
+    [*] --> Requested
+
+    Requested --> Generating
+    Generating --> Generated
+
+    Generated --> Downloaded
+```
+
+```mermaid
+stateDiagram-v2
+    [*] --> Created
+
+    Created --> Active
+    Active --> Updated
+
+    Updated --> Active
+```
+
+```mermaid
+stateDiagram-v2
+    [*] --> Requested
+
+    Requested --> Granted
+    Granted --> Revoked
+ ```
+ 
