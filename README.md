@@ -41,9 +41,7 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 | `REFLECTION_ASSIGNMENT7.md` | Assignment 7: Reflection |
 | `STATE_DIAGRAMS.md` | Assignment 8: State Diagrams |
 | `ACTIVITY DIAGRAMS.md` | Assignment 8: Activity Diagrams |
-| `ACTIVITY DIAGRAMS.md` | Assignment 8: Activity Diagrams |
-Behavioral_Diagrams_Assignment 8_Reflection
-
+| `Behavioral_Diagrams_Assignment 8_Reflection.md` | Assignment 8: Reflection |
 | `src/` | Source code (to be developed later) |
 | `docs/` | Additional documentation |
 
@@ -64,6 +62,7 @@ Behavioral_Diagrams_Assignment 8_Reflection
 -  [Assignment_7_Reflection ](REFLECTION_ASSIGNMENT7.md)
 -  [State Diagrams ](STATE_DIAGRAMS.md)
 -  [Activity Diagrams ](ACTIVITY_DIAGRAMS.md)
+-  [Assignement_8_Reflection ](Behavioral_Diagrams_Assignment 8_Reflection.md)
 ---
 
 ## Development Status
