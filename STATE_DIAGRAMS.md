@@ -1,5 +1,4 @@
-
-
+```mermaid
 stateDiagram-v2
     [*] --> Unregistered
 
@@ -11,6 +10,6 @@ stateDiagram-v2
     Suspended --> Active : Reactivated
 
     Active --> Deleted : User deletes account
-
+```
 
 
