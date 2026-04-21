@@ -74,9 +74,7 @@ Patient "1" --> "0..*" Report : generates
 
 ```
 
-# 🧠 3. CLASS DIAGRAM EXPLANATION
-
-## Explanation
+# CLASS DIAGRAM EXPLANATION
 
 The class diagram represents the structure of the Hospital Vital Monitoring System.
 
