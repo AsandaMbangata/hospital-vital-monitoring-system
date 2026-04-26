@@ -42,6 +42,9 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 | `STATE_DIAGRAMS.md` | Assignment 8: State Diagrams |
 | `ACTIVITY DIAGRAMS.md` | Assignment 8: Activity Diagrams |
 | `Behavioral_Diagrams_Assignment 8_Reflection.md` | Assignment 8: Reflection |
+| `DOMAIN_MODEL.md` | Assignment 9: Domain Model |
+| `CLASS_DIAGRAM.md` | Assignment 9: Class Diagram |
+| `ASSIGNMENT9_REFLECTION.md` | Assignment 9: Reflection |
 | `src/` | Source code (to be developed later) |
 | `docs/` | Additional documentation |
 
@@ -63,6 +66,10 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 -  [State Diagrams ](STATE_DIAGRAMS.md)
 -  [Activity Diagrams ](ACTIVITY_DIAGRAMS.md)
 -  [Assignment_8_Reflection ](Behavioral_Diagrams_Assignment_8_Reflection.md)
+-  [Domain Model ](DOMAIN_MODEL.md)
+-  [Class Diagram ](CLASS_DIAGRAM.md)
+-  [Assignment 9 Reflection ](ASSIGNMENT9_REFLECTION.md)
+
 ---
 
 ## Development Status
