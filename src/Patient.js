@@ -9,6 +9,10 @@ class Patient extends User {
     logVital(vital) {
         this.vitals.push(vital);
     }
+
+        getVitals() {
+        return this.vitals;
+    }
 }
 
 module.exports = Patient;
