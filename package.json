@@ -1,0 +1,27 @@
+{
+  "name": "hospital-vital-monitoring-system",
+  "version": "1.0.0",
+  "description": "**Hospital Vital Monitoring System**\r The goal of this system is to provide a simple platform for monitoring patient vital signs remotely and allowing healthcare providers to track patient health data more effectively.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsandaMbangata/hospital-vital-monitoring-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AsandaMbangata/hospital-vital-monitoring-system/issues"
+  },
+  "homepage": "https://github.com/AsandaMbangata/hospital-vital-monitoring-system#readme",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
