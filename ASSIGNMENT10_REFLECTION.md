@@ -4,6 +4,4 @@ Another challenge was implementing the six creational design patterns correctly.
 
 The Singleton pattern helped reinforce the importance of controlling shared resources such as database connections. Ensuring only one instance exists improved system consistency. The Prototype pattern demonstrated how objects can be cloned efficiently without reinitializing all data, which is useful for performance optimization.
 
-This assignment also improved my understanding of separation of concerns. Each pattern and class was placed in its own module, making the system more organized and maintainable. Writing unit tests further strengthened the design by verifying that each pattern behaved as expected under different conditions.
-
-Overall, this assignment showed how design patterns provide flexible solutions to common software design problems. It also highlighted the importance of translating abstract UML diagrams into structured, testable code. The process improved both my object-oriented design skills and my understanding of real-world software architecture practices.
+This assignment also improved my understanding of separation of concerns. Each pattern and class was placed in its own module, making the system more organized and maintainable. Writing unit tests further strengthened the design by verifying that each pattern behaved as expected under different conditions. The process improved both my object-oriented design skills and my understanding of real-world software architecture practices.
