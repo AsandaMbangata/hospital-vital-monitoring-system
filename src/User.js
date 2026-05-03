@@ -4,6 +4,13 @@ class User {
         this.email = email;
         this.role = role;
     }
+        getEmail() {
+        return this.email;
+    }
+
+    getRole() {
+        return this.role;
+    }
 
     login() {
         return `${this.email} logged in`;
