@@ -122,6 +122,19 @@ Additional columns such as **Testing** and **Blocked** were introduced to improv
 ### Screenshot
 ![Kanban Board](screenshots/custom_kanban_board.png)
 ![Kanban Board](screenshots/custom_kanban_board_labels.png)
+
+## Design Decisions (Assignment 10)
+
+This system implements multiple creational design patterns to improve flexibility and maintainability:
+
+- Simple Factory: Used for centralized user creation (Patient, Doctor)
+- Factory Method: Used for alert generation (Email/SMS alerts)
+- Abstract Factory: Used for UI component creation
+- Builder: Used for constructing VitalSign objects step-by-step
+- Prototype: Used for cloning existing vital records
+- Singleton: Used for database connection management
+
+These patterns were chosen to demonstrate different object creation strategies and improve system scalability.
 ---
 
 ## Author
