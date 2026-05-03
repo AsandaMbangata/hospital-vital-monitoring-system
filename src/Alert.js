@@ -1,10 +1,11 @@
 class Alert {
-    constructor(message) {
+    constructor(message, type = "general") {
         this.message = message;
+        this.type = type;
     }
 
     send() {
-        return `Alert sent: ${this.message}`;
+        return `Alert (${this.type}): ${this.message}`;
     }
 }
 
