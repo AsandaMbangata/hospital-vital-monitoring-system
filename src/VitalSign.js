@@ -8,6 +8,9 @@ class VitalSign {
     isAbnormal() {
         return this.heartRate > 100 || this.temp > 38;
     }
+        getSummary() {
+        return `BP: ${this.bp}, HR: ${this.heartRate}, Temp: ${this.temp}`;
+    }
 }
 
 module.exports = VitalSign;
