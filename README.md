@@ -47,7 +47,9 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 | `ASSIGNMENT9_REFLECTION.md` | Assignment 9: Reflection |
 | `CHANGELOG.md` | Assignment 10: Change Log |
 | `ASSIGNMENT10_REFLECTION.md` | Assignment 10: Reflection |
-| `src/` | Source code (to be developed later) |
+| `src/` | Core system class implementations (Assignment 10) |
+| `creational_patterns/` | Implementation of all six creational design pattern |
+| `tests/` | Jest unit tests validating object creation |
 | `docs/` | Additional documentation |
 
 ---
@@ -63,10 +65,9 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 -  [Agile Planning](AGILE_PLANNING_DOCUMENT.md)
 -  [Template Analysis](TEMPLATE_ANALYSIS.md)
 -  [Kanban Explanation](KANBAN_EXPLANATION.md)
--  [Reflection](REFLECTION.md)
 -  [Assignment_7_Reflection ](REFLECTION_ASSIGNMENT7.md)
 -  [State Diagrams ](STATE_DIAGRAMS.md)
--  [Activity Diagrams ](ACTIVITY_DIAGRAMS.md)
+-  [Activity_Diagrams ](ACTIVITY_DIAGRAMS.md)
 -  [Assignment_8_Reflection ](Behavioral_Diagrams_Assignment_8_Reflection.md)
 -  [Domain Model ](DOMAIN_MODEL.md)
 -  [Class Diagram ](CLASS_DIAGRAM.md)
@@ -138,6 +139,7 @@ This system implements multiple creational design patterns to improve flexibilit
 - Singleton: Used for database connection management
 
 These patterns were chosen to demonstrate different object creation strategies and improve system scalability.
+
 ---
 
 ## Author
