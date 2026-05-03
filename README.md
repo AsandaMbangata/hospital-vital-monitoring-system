@@ -129,16 +129,20 @@ Additional columns such as **Testing** and **Blocked** were introduced to improv
 
 ## Design Decisions (Assignment 10)
 
-This system implements multiple creational design patterns to improve flexibility and maintainability:
+This system implements multiple creational design patterns to improve flexibility, maintainability, and scalability:
 
-- Simple Factory: Used for centralized user creation (Patient, Doctor)
-- Factory Method: Used for alert generation (Email/SMS alerts)
-- Abstract Factory: Used for UI component creation
-- Builder: Used for constructing VitalSign objects step-by-step
-- Prototype: Used for cloning existing vital records
-- Singleton: Used for database connection management
+- Simple Factory: Used to create different types of users (Patient, Doctor) through a centralized creation method.
+- Factory Method: Used to generate different alert types (e.g., Email and SMS alerts) without modifying existing code.
+- Abstract Factory: Used to create related UI components (e.g., web and mobile interfaces) in a consistent way.
+- Builder: Used to construct VitalSign objects step-by-step, allowing flexible creation of complex data.
+- Prototype: Used to clone existing vital records efficiently without reinitializing objects.
+- Singleton: Used to ensure only one instance of the database connection exists throughout the system.
 
-These patterns were chosen to demonstrate different object creation strategies and improve system scalability.
+These patterns were selected to demonstrate different object creation strategies while improving code organization, reusability, and scalability.
+
+### Coverage Report
+
+Test coverage was generated using Jest, confirming that all creational patterns are tested.
 
 ---
 
