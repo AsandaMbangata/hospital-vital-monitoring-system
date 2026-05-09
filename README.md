@@ -143,6 +143,7 @@ These patterns were selected to demonstrate different object creation strategies
 ### Coverage Report
 
 Test coverage was generated using Jest, confirming that all creational patterns are tested.
+![Evidence](screenshots/image.png)
 
 ---
 
