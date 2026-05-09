@@ -1,7 +1,0 @@
-Transforming the UML class diagram into working code was a valuable step in understanding how system design translates into implementation. One of the main challenges was ensuring that the structure of the code matched the relationships defined in the class diagram, especially when dealing with inheritance between User, Patient, and Doctor classes.
-
-Another challenge was implementing the six creational design patterns correctly. At first, it was difficult to understand when to apply each pattern. For example, deciding when to use a Factory Method versus a Simple Factory required careful consideration of object creation responsibilities. The Builder pattern was easier to apply because it matched the need for constructing complex VitalSign objects step-by-step.
-
-The Singleton pattern helped reinforce the importance of controlling shared resources such as database connections. Ensuring only one instance exists improved system consistency. The Prototype pattern demonstrated how objects can be cloned efficiently without reinitializing all data, which is useful for performance optimization.
-
-This assignment also improved my understanding of separation of concerns. Each pattern and class was placed in its own module, making the system more organized and maintainable. Writing unit tests further strengthened the design by verifying that each pattern behaved as expected under different conditions. The process improved both my object-oriented design skills and my understanding of real-world software architecture practices.
