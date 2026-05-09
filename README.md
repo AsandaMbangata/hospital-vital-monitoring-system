@@ -46,7 +46,6 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 | `CLASS_DIAGRAM.md` | Assignment 9: Class Diagram |
 | `ASSIGNMENT9_REFLECTION.md` | Assignment 9: Reflection |
 | `CHANGELOG.md` | Assignment 10: Change Log |
-| `ASSIGNMENT10_REFLECTION.md` | Assignment 10: Reflection |
 | `src/` | Core system class implementations (Assignment 10) |
 | `creational_patterns/` | Implementation of all six creational design pattern |
 | `tests/` | Jest unit tests validating object creation |
@@ -72,7 +71,7 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 -  [Domain Model ](DOMAIN_MODEL.md)
 -  [Class Diagram ](CLASS_DIAGRAM.md)
 -  [Change Log ](CHANGELOG.md)
--  [Assignment 10 Reflection ](ASSIGNMENT10_REFLECTION.md)
+
 
 ---
 
