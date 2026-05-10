@@ -62,9 +62,6 @@ class Report {
     +generateReport()
 }
 
-
-classDiagram
-
 class Repository
 class PatientRepository
 class InMemoryPatientRepository
