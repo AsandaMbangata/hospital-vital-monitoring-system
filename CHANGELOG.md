@@ -36,3 +36,10 @@
 - #6 US-005 Doctor Dashboard
 - #8 US-007 Detect Abnormal Readings
 - #9 US-008 Send Alerts
+
+## Assignment 11 Updates
+- Added repository interfaces
+- Implemented in-memory repository layer
+- Added RepositoryFactory for abstraction
+- Added database repository stub
+- Added CRUD unit tests for repositories
