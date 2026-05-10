@@ -145,6 +145,24 @@ Test coverage was generated using Jest, confirming that all creational patterns 
 
 ![Evidence](screenshots/image.png)
 
+
+## Repository Layer (Assignment 11)
+
+A repository layer was implemented to separate business logic from storage logic.
+
+### Design Choices
+
+- Generic repository interfaces were used to reduce code duplication.
+- An in-memory repository implementation was created using JavaScript Map storage.
+- The Factory Pattern was used to switch between repository implementations.
+- A future database repository stub was added to support scalability and future persistence options.
+
+### Benefits
+
+- Improved separation of concerns
+- Easier testing using in-memory repositories
+- Future support for databases and external storage systems
+
 ---
 
 ## Author
