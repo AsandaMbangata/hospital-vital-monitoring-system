@@ -62,6 +62,21 @@ class Report {
     +generateReport()
 }
 
+
+classDiagram
+
+class Repository
+class PatientRepository
+class InMemoryPatientRepository
+class DatabasePatientRepository
+class RepositoryFactory
+
+Repository <|-- PatientRepository
+PatientRepository <|-- InMemoryPatientRepository
+PatientRepository <|-- DatabasePatientRepository
+RepositoryFactory --> InMemoryPatientRepository
+
+
 User <|-- Patient
 User <|-- Doctor
 User <|-- Admin
