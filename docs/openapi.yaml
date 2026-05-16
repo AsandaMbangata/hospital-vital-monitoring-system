@@ -1,1 +1,19 @@
+openapi: 3.0.0
 
+info:
+  title: Hospital Vital Monitoring API
+  version: 1.0.0
+
+paths:
+  /api/patients:
+    get:
+      summary: Get all patients
+      responses:
+        '200':
+          description: Successful response
+
+    post:
+      summary: Create patient
+      responses:
+        '201':
+          description: Patient created
