@@ -22,12 +22,28 @@ paths:
   /api/patients/{id}:
     put:
       summary: Update patient
+
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+
       responses:
         '200':
           description: Patient updated successfully
 
     delete:
       summary: Delete patient
+
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+
       responses:
         '200':
           description: Patient deleted successfully
