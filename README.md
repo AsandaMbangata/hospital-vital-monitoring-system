@@ -171,8 +171,7 @@ GET /api/patients
 {
   "message": "Fetch all patients"
 }
-
----
+```
 
 ## Author
 
