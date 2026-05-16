@@ -43,3 +43,9 @@
 - Added RepositoryFactory for abstraction
 - Added database repository stub
 - Added CRUD unit tests for repositories
+
+## Assignment 12 Updates
+```md id="rjlwm9"
+- Verified REST API endpoints using Express.js
+- Successfully tested GET /api/patients endpoint
+```
