@@ -17,3 +17,17 @@ paths:
       responses:
         '201':
           description: Patient created
+
+ /api/patients/{id}:
+
+    put:
+      summary: Update patient
+      responses:
+        '200':
+          description: Patient updated
+
+    delete:
+      summary: Delete patient
+      responses:
+        '200':
+          description: Patient deleted  
