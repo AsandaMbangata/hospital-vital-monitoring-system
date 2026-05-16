@@ -163,6 +163,15 @@ A repository layer was implemented to separate business logic from storage logic
 - Easier testing using in-memory repositories
 - Future support for databases and external storage systems
 
+  ### Example API Response
+
+GET /api/patients
+
+```json
+{
+  "message": "Fetch all patients"
+}
+
 ---
 
 ## Author
