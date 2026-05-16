@@ -1,21 +1,17 @@
 const express = require('express');
+const swaggerUi = require('swagger-ui-express');
+const YAML = require('yamljs');
 
 const patientRoutes = require('./api/patientRoutes');
-const doctorRoutes = require('./api/doctorRoutes');
-const vitalSignRoutes = require('./api/vitalSignRoutes');
 
 const app = express();
 
-app.use(express.json());
+const swaggerDocument = YAML.load('./docs/openapi.yaml');
 
 app.use('/api/patients', patientRoutes);
-app.use('/api/doctors', doctorRoutes);
-app.use('/api/vitals', vitalSignRoutes);
 
-const PORT = 3000;
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
 });
-
-module.exports = app;
