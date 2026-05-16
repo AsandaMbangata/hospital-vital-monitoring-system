@@ -3,31 +3,31 @@ openapi: 3.0.0
 info:
   title: Hospital Vital Monitoring API
   version: 1.0.0
+  description: REST API for patients, doctors, and vital signs
 
 paths:
   /api/patients:
     get:
-      summary: Get all patients
+      summary: Fetch all patients
       responses:
         '200':
           description: Successful response
 
     post:
-      summary: Create patient
+      summary: Create a patient
       responses:
         '201':
-          description: Patient created
+          description: Patient created successfully
 
- /api/patients/{id}:
-
+  /api/patients/{id}:
     put:
       summary: Update patient
       responses:
         '200':
-          description: Patient updated
+          description: Patient updated successfully
 
     delete:
       summary: Delete patient
       responses:
         '200':
-          description: Patient deleted  
+          description: Patient deleted successfully
