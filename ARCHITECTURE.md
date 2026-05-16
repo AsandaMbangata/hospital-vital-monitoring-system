@@ -1,4 +1,4 @@
-# System Architecture Document
+# 🏗️ System Architecture Document
 
 ## 1. Introduction
 
@@ -35,11 +35,11 @@ This project is feasible for individual development over one semester because:
 | **Time** | Incremental development: auth → data entry → dashboard → alerts → reports |
 
 **Out of Scope (This Semester):**
--  Medical device integration (automated vital capture)
--  Full Electronic Health Records (EHR) system
--  Billing and insurance processing
--  Mobile application (web-first approach)
--  Multi-hospital deployment
+- ❌ Medical device integration (automated vital capture)
+- ❌ Full Electronic Health Records (EHR) system
+- ❌ Billing and insurance processing
+- ❌ Mobile application (web-first approach)
+- ❌ Multi-hospital deployment
 
 **Minimum Viable Product (MVP):**
 1. User authentication (patient/doctor roles)
@@ -72,11 +72,8 @@ C4Context
     Rel(admin, vital_system, "Manages system settings", "HTTPS")
     Rel(vital_system, email_service, "Sends alerts", "SendGrid API")
     Rel(vital_system, database, "Stores/retrieves data", "SQL via Prisma")
-
-    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
 ```
-
-## 2. C4 Level 2: Container Diagram
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
 
 ```mermaid
 C4Container
@@ -111,9 +108,6 @@ C4Container
 
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
 ```
-
-## 2. C4 Level 3: Component Diagram
-
 ```mermaid
 C4Component
     title Component Diagram - React Web Application
@@ -129,9 +123,6 @@ C4Component
     Rel(patient_dash, api_client, "Uses")
     Rel(doctor_dash, api_client, "Uses")
 ```
-
-## 2. C4 Level 4: Class Diagram
-
 ```mermaid
 classDiagram
     class User {
@@ -178,9 +169,6 @@ classDiagram
     Doctor --> VitalSign : views
     VitalSign --> Alert : triggers
 ```
-
-## 2. C4 Level 5: Flowchart Diagram
-
 ```mermaid
 flowchart LR
     A[Patient Browser] -->|HTTPS| B[React Web App]
