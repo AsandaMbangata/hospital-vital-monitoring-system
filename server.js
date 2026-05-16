@@ -1,4 +1,3 @@
-
 const express = require('express');
 
 const patientRoutes = require('./api/patientRoutes');
