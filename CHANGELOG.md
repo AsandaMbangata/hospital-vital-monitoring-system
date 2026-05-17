@@ -45,5 +45,11 @@
 - Added CRUD unit tests for repositories
 
 ## Assignment 12 Updates
-- Verified REST API endpoints using Express.js
-- Successfully tested GET /api/patients endpoint
+
+- Implemented Patient Service Layer using repository integration
+- Added REST API endpoints using Express.js
+- Verified GET /api/patients endpoint functionality
+- Integrated Swagger/OpenAPI documentation
+- Configured Swagger UI at http://localhost:3000/docs
+- Added API and service layer tests
+- Updated GitHub Issues and project board progress
