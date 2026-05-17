@@ -1,17 +1,45 @@
 const express = require('express');
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yamljs');
+const path = require('path');
 
 const patientRoutes = require('./api/patientRoutes');
 
 const app = express();
 
-const swaggerDocument = YAML.load('./docs/openapi.yaml');
+app.use(express.json());
 
+// Basic test route (to confirm server is running)
+app.get('/', (req, res) => {
+    res.send('Hospital API is running');
+});
+
+// API routes
 app.use('/api/patients', patientRoutes);
 
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+// Load Swagger YAML safely
+let swaggerDocument;
 
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
+try {
+    swaggerDocument = YAML.load(
+        path.join(__dirname, 'docs', 'openapi.yaml')
+    );
+    console.log('Swagger YAML loaded successfully');
+} catch (error) {
+    console.error('Error loading Swagger file:', error.message);
+}
+
+// Swagger UI
+if (swaggerDocument) {
+    app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+} else {
+    console.log('Swagger not loaded - /docs disabled');
+}
+
+// Start server
+const PORT = 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+
 });
