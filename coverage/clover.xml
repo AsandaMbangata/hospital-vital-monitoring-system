@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1777838308209" clover="3.2.0">
-  <project timestamp="1777838308209" name="All files">
-    <metrics statements="42" coveredstatements="37" conditionals="10" coveredconditionals="6" methods="21" coveredmethods="15" elements="73" coveredelements="58" complexity="0" loc="42" ncloc="42" packages="2" files="9" classes="9"/>
-    <package name="creational_patterns">
+<coverage generated="1779135944279" clover="3.2.0">
+  <project timestamp="1779135944279" name="All files">
+    <metrics statements="90" coveredstatements="73" conditionals="12" coveredconditionals="7" methods="41" coveredmethods="21" elements="143" coveredelements="101" complexity="0" loc="90" ncloc="90" packages="7" files="15" classes="15"/>
+    <package name="hospital-vital-monitoring-system">
+      <metrics statements="20" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="0"/>
+      <file name="server.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\server.js">
+        <metrics statements="20" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="33" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="hospital-vital-monitoring-system.api">
+      <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="patientRoutes.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\api\patientRoutes.js">
+        <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="hospital-vital-monitoring-system.creational_patterns">
       <metrics statements="28" coveredstatements="27" conditionals="10" coveredconditionals="6" methods="15" coveredmethods="13"/>
-      <file name="abstractFactory.js" path="C:\Users\simam\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\abstractFactory.js">
+      <file name="abstractFactory.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\abstractFactory.js">
         <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="3"/>
         <line num="7" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
@@ -12,7 +55,7 @@
         <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="24" count="1" type="stmt"/>
       </file>
-      <file name="builder" path="C:\Users\simam\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\builder">
+      <file name="builder.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\builder.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="3" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
@@ -22,19 +65,19 @@
         <line num="17" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
       </file>
-      <file name="factoryMethod.js" path="C:\Users\simam\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\factoryMethod.js">
+      <file name="factoryMethod.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\factoryMethod.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="7" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
       </file>
-      <file name="prototype.js" path="C:\Users\simam\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\prototype.js">
+      <file name="prototype.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\prototype.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="2" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
       </file>
-      <file name="simpleFactory.js" path="C:\Users\simam\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\simpleFactory.js">
+      <file name="simpleFactory.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\simpleFactory.js">
         <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -42,7 +85,7 @@
         <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="11" count="1" type="stmt"/>
       </file>
-      <file name="singleton.js" path="C:\Users\simam\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\singleton.js">
+      <file name="singleton.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\creational_patterns\singleton.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="3" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="4" count="1" type="stmt"/>
@@ -51,30 +94,68 @@
         <line num="11" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src">
-      <metrics statements="14" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
-      <file name="Doctor.js" path="C:\Users\simam\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\src\Doctor.js">
+    <package name="hospital-vital-monitoring-system.repositories">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="PatientRepository.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\repositories\PatientRepository.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="Repository.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\repositories\Repository.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="hospital-vital-monitoring-system.repositories.inmemory">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="InMemoryPatientRepository.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\repositories\inmemory\InMemoryPatientRepository.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="hospital-vital-monitoring-system.services">
+      <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="PatientService.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\services\PatientService.js">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="hospital-vital-monitoring-system.src">
+      <metrics statements="17" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="2"/>
+      <file name="Doctor.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\src\Doctor.js">
         <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
-      <file name="Patient.js" path="C:\Users\simam\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\src\Patient.js">
-        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+      <file name="Patient.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\src\Patient.js">
+        <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
       </file>
-      <file name="User.js" path="C:\Users\simam\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\src\User.js">
-        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+      <file name="User.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\src\User.js">
+        <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
       </file>
     </package>
   </project>
