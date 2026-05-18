@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1779135944279" clover="3.2.0">
-  <project timestamp="1779135944279" name="All files">
-    <metrics statements="90" coveredstatements="73" conditionals="12" coveredconditionals="7" methods="41" coveredmethods="21" elements="143" coveredelements="101" complexity="0" loc="90" ncloc="90" packages="7" files="15" classes="15"/>
+<coverage generated="1779138956630" clover="3.2.0">
+  <project timestamp="1779138956631" name="All files">
+    <metrics statements="96" coveredstatements="76" conditionals="14" coveredconditionals="8" methods="45" coveredmethods="23" elements="155" coveredelements="107" complexity="0" loc="96" ncloc="96" packages="7" files="15" classes="15"/>
     <package name="hospital-vital-monitoring-system">
-      <metrics statements="20" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="0"/>
+      <metrics statements="22" coveredstatements="17" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="0"/>
       <file name="server.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\server.js">
-        <metrics statements="20" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="0"/>
+        <metrics statements="22" coveredstatements="17" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -24,18 +24,20 @@
         <line num="34" count="1" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="45" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
       </file>
     </package>
     <package name="hospital-vital-monitoring-system.api">
-      <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <metrics statements="11" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
       <file name="patientRoutes.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\api\patientRoutes.js">
-        <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <metrics statements="11" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
@@ -121,12 +123,16 @@
       </file>
     </package>
     <package name="hospital-vital-monitoring-system.services">
-      <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
       <file name="PatientService.js" path="C:\Users\asand\OneDrive\Documents\GitHub\hospital-vital-monitoring-system\services\PatientService.js">
-        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
       </file>
     </package>
     <package name="hospital-vital-monitoring-system.src">

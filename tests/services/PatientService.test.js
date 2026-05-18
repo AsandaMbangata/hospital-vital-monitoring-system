@@ -5,7 +5,7 @@ describe("PatientService", () => {
     test("should create patient", () => {
 
         const mockRepo = {
-            save: jest.fn()
+            save: jest.fn((patient) => patient)
         };
 
         const service = new PatientService(mockRepo);
