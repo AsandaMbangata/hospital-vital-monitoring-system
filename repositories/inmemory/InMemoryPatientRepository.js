@@ -8,6 +8,7 @@ class InMemoryPatientRepository extends PatientRepository {
 
     save(patient) {
         this.storage.set(patient.id, patient);
+        return patient;
     }
 
     findById(id) {
@@ -16,6 +17,11 @@ class InMemoryPatientRepository extends PatientRepository {
 
     findAll() {
         return Array.from(this.storage.values());
+    }
+    
+        update(id, updatedPatient) {
+        this.storage.set(id, updatedPatient);
+        return updatedPatient;
     }
 
     delete(id) {
