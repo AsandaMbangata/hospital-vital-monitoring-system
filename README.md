@@ -49,7 +49,8 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 | `src/` | Core system class implementations (Assignment 10) |
 | `creational_patterns/` | Implementation of all six creational design pattern |
 | `tests/` | Jest unit tests validating object creation |
-| `docs/` | Additional documentation |
+| `docs/openapi.yaml` |  |
+| `PROTECTION.md` | Assignment 13: Branch Protection |
 
 ---
 
@@ -71,6 +72,7 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 -  [Domain Model ](DOMAIN_MODEL.md)
 -  [Class Diagram ](CLASS_DIAGRAM.md)
 -  [Change Log ](CHANGELOG.md)
+-  [Branch Protection ](PROTECTION.md)
 
 
 ---
