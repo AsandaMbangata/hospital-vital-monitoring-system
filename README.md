@@ -175,8 +175,81 @@ GET /api/patients
 
 ### Assignment 13
 
-CI/CD workflow test update
-New branch 'Assignment13'
+# Assignment 13 – CI/CD with GitHub Actions
+
+## Continuous Integration and Continuous Deployment (CI/CD)
+
+This project uses GitHub Actions to automate testing and artifact generation.
+
+The CI/CD pipeline helps ensure that:
+- All code changes are tested automatically
+- Pull requests are reviewed before merging
+- Broken code cannot be merged into the `main` branch
+- Release artifacts are generated automatically
+
+---
+
+## Branch Protection Rules
+
+Branch protection rules were configured for the `main` branch to improve code quality and maintain project stability.
+
+### Rules Applied
+- Require pull request reviews before merging
+- Require at least one approval review
+- Require status checks to pass before merging
+- Prevent direct pushes to the `main` branch
+- Block force pushes
+
+These protections help ensure that all code is reviewed and tested before deployment.
+
+---
+
+## CI Pipeline Features
+
+The GitHub Actions workflow automatically:
+
+- Runs on every push
+- Runs on every pull request targeting `main`
+- Installs project dependencies
+- Executes all unit and integration tests using Jest
+
+### Workflow File
+```text
+.github/workflows/ci.yml
+
+CD Pipeline Features
+
+The deployment pipeline automatically:
+
+Builds a release artifact after successful tests
+Generates a ZIP release package
+Uploads the artifact using GitHub Actions
+
+Generated artifact:
+hospital-api.zip
+
+Running Tests Locally
+
+Install dependencies:
+npm install
+
+Run tests:
+npm test
+
+Pull Request Workflow
+
+This project follows a pull request workflow where:
+
+Developers create a feature branch
+A pull request is opened against main
+GitHub Actions automatically runs tests
+Pull requests require approval before merging
+Code is merged only after all checks pass
+
+This workflow improves software quality and supports modern DevOps practices.
+
+```
+
 
 ## Author
 
