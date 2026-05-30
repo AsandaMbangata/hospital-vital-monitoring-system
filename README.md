@@ -175,6 +175,30 @@ GET /api/patients
 }
 ```
 
+## REST API (Assignment 12)
+
+The Hospital Vital Monitoring System exposes RESTful API endpoints using Express.js.
+
+### Endpoints
+
+| Method | Endpoint | Description |
+|----------|----------|----------|
+| GET | /api/patients | Retrieve all patients |
+| GET | /api/patients/:id | Retrieve a patient by ID |
+| POST | /api/patients | Create a patient |
+| PUT | /api/patients/:id | Update a patient |
+| DELETE | /api/patients/:id | Delete a patient |
+
+### API Documentation
+
+Swagger UI:
+
+http://localhost:3000/docs
+
+The OpenAPI specification is stored in:
+
+docs/openapi.yaml
+
 ### Assignment 13
 
 # Assignment 13 – CI/CD with GitHub Actions
@@ -216,6 +240,26 @@ The GitHub Actions workflow automatically:
 - Executes all unit and integration tests using Jest
 
 ### Workflow File
+
+## Testing
+
+Testing is implemented using Jest.
+
+The project includes:
+
+- Unit tests
+- Repository tests
+- API endpoint tests
+- Service layer tests
+
+Run tests:
+
+npm test
+
+Generate coverage:
+
+npm test -- --coverage
+
 ```text
 .github/workflows/ci.yml
 
