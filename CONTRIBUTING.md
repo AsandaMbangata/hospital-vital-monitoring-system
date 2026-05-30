@@ -95,7 +95,7 @@ Before starting development, contributors should select an open GitHub Issue.
 Priority should be given to issues labeled:
 
 * good-first-issue
-* feature-request
+* feature
 * bug
 * enhancement
 
