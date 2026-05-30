@@ -252,6 +252,17 @@ This workflow improves software quality and supports modern DevOps practices.
 
 ```
 
+![Branch Protection](screenshots/Branch_Protection.png)
+![Testing](screenshots/Testing_PR_Protection.png)
+![Artifacts](screenshots/artifacts.png)
+![Tests](screenshots/run_tests.png)
+![Failing Tests](screenshots/PR_blocked_by_failing_tests.png)
+![Failed Workflow](screenshots/failed_workflow.png)
+
+
+
+
+
 
 ## Author
 
