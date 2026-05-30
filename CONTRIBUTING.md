@@ -164,6 +164,4 @@ Contributors should:
 * Collaborate professionally.
 * Support an inclusive learning environment.
 
-## Thank You
-
 Thank you for contributing to the Hospital Vital Monitoring System and helping improve healthcare software quality and reliability.
