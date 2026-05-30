@@ -303,10 +303,73 @@ This workflow improves software quality and supports modern DevOps practices.
 ![Failing Tests](screenshots/PR_blocked_by_failing_tests.png)
 ![Failed Workflow](screenshots/failed_workflow.png)
 
+## Getting Started
 
+### Prerequisites
 
+Before running the project, ensure you have the following installed:
 
+* Node.js (v20 or later)
+* npm
+* Git
 
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/hospital-vital-monitoring-system.git
+cd hospital-vital-monitoring-system
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Application
+
+```bash
+npm start
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
+
+### Run Tests
+
+```bash
+npm test
+```
+
+### Generate Test Coverage Report
+
+```bash
+npm test -- --coverage
+```
+
+---
+
+## Features for Contribution
+
+The following features are planned for future development and are open for contribution.
+
+| Feature                        | Status         |
+| ------------------------------ | -------------- |
+| JWT Authentication             | Planned        |
+| Doctor Dashboard               | Planned        |
+| Email Notifications            | Planned        |
+| Patient Search Endpoint        | Planned        |
+| Improved API Validation        | Planned        |
+| Input Sanitization             | Planned        |
+| Vital Sign Alert System        | Planned        |
+| Mobile Application Support     | Future Release |
+| Real-Time Monitoring Dashboard | Future Release |
+| PostgreSQL Integration         | Future Release |
+
+Contributors are encouraged to review open issues, select a task, and submit a pull request following the guidelines in `CONTRIBUTING.md`.
 
 ## Author
 
