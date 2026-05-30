@@ -88,23 +88,80 @@ npm test
 
 ## Pull Request Process
 
-1. Create a feature branch.
-2. Implement your changes.
-3. Commit your changes with a meaningful commit message.
+### Selecting an Issue
+
+Before starting development, contributors should select an open GitHub Issue.
+
+Priority should be given to issues labeled:
+
+* good-first-issue
+* feature-request
+* bug
+* enhancement
+
+Contributors should ensure the issue is not already assigned to another contributor.
+
+### Creating a Feature Branch
+
+Create a branch related to the selected issue:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+### Implementing Changes
+
+Develop and test your solution locally.
+
+Run all tests before committing:
+
+```bash
+npm test
+```
+
+### Committing Changes
+
+Commit your work using a meaningful commit message:
 
 ```bash
 git commit -m "Add patient validation feature"
 ```
 
-4. Push your branch to GitHub.
+### Pushing Changes
+
+Push your branch to GitHub:
 
 ```bash
 git push origin feature/your-feature-name
 ```
 
-5. Create a Pull Request targeting the `main` branch.
-6. Wait for GitHub Actions to complete successfully.
-7. Obtain at least one approval review before merging.
+### Creating a Pull Request
+
+Create a Pull Request targeting the `main` branch.
+
+Include a clear description of:
+
+* What was changed
+* Why the change was made
+* Which issue is being addressed
+
+Example:
+
+```text
+Closes #5
+```
+
+### Review and Approval
+
+Before merging:
+
+* GitHub Actions tests must pass successfully.
+* Branch protection requirements must be satisfied.
+* At least one approval review must be received.
+* Any requested changes must be resolved.
+
+Only approved and successfully tested Pull Requests may be merged into the `main` branch.
+
 
 ## Continuous Integration and Deployment
 
