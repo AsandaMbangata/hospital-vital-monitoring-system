@@ -6,7 +6,28 @@ This roadmap outlines planned improvements and future development goals for the 
 
 ---
 
-## Version 1.1 – Security and User Management
+## Current Status
+
+### Completed Features
+
+- Domain Model and Class Diagram
+- Creational Design Patterns
+- Repository Layer
+- Service Layer and API
+- OpenAPI Documentation
+- Unit and Integration Testing
+- CI/CD Pipeline with GitHub Actions
+- Branch Protection and Pull Request Workflow
+
+### In Progress
+
+- Community Contributions
+- Open Source Collaboration
+- Future Feature Enhancements
+
+Version 1.1 – Security and User Management
+Priority: High
+Estimated Release: Q3 2026
 
 ### Planned Features
 
@@ -21,7 +42,9 @@ Improve system security and ensure only authorized users can access protected re
 
 ---
 
-## Version 1.2 – Patient Monitoring Enhancements
+Version 1.2 – Patient Monitoring Enhancements
+Priority: High
+Estimated Release: Q4 2026
 
 ### Planned Features
 
@@ -36,7 +59,9 @@ Provide better patient data management and improve overall user experience.
 
 ---
 
-## Version 1.3 – Notifications and Alerts
+Version 1.3 – Notifications and Alerts
+Priority: Medium
+Estimated Release: Q1 2027
 
 ### Planned Features
 
@@ -51,7 +76,9 @@ Allow healthcare providers to respond quickly to abnormal patient conditions.
 
 ---
 
-## Version 1.4 – Reporting and Analytics
+Version 1.4 – Reporting and Analytics
+Priority: Medium
+Estimated Release: Q2 2027
 
 ### Planned Features
 
@@ -66,7 +93,9 @@ Provide valuable insights into patient health trends and improve decision-making
 
 ---
 
-## Version 2.0 – Deployment and Scalability
+Version 2.0 – Deployment and Scalability
+Priority: High
+Estimated Release: Q3 2027
 
 ### Planned Features
 
@@ -91,6 +120,24 @@ Prepare the application for production use and support larger numbers of users.
 * AI-Based Health Monitoring Recommendations
 
 ---
+
+## Contribution Opportunities
+
+The following features are suitable for contributors:
+
+### Good First Issues
+
+- Improve API validation
+- Improve Swagger documentation
+- Add patient search endpoint
+- Improve error handling
+- Add input sanitization
+
+### Feature Requests
+
+- JWT Authentication
+- Doctor Dashboard
+- Email Notifications
 
 ## Community Contributions
 
