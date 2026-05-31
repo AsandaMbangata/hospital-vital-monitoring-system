@@ -9,8 +9,8 @@ Repository: Hospital Vital Monitoring System
 | Metric        | Count   |
 | ------------- | ------- |
 | Stars         | 18      |
-| Forks         | 21      |
-| Open Issues   | 17      |
+| Forks         | 22      |
+| Open Issues   | 18      |
 | Pull Requests | Pending |
 | Contributors  | Pending |
 
