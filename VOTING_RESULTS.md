@@ -8,7 +8,7 @@ Repository: Hospital Vital Monitoring System
 
 | Metric        | Count   |
 | ------------- | ------- |
-| Stars         | 18      |
+| Stars         | 19      |
 | Forks         | 22      |
 | Open Issues   | 18      |
 | Pull Requests | Pending |
@@ -33,8 +33,8 @@ The project includes:
 
 The repository received positive engagement from peers, resulting in:
 
-* 18 repository stars
-* 21 repository forks
+* 19 repository stars
+* 22 repository forks
 
 These interactions indicate interest in the project and demonstrate successful participation in an open-source collaboration workflow.
 
@@ -50,5 +50,5 @@ Sharing the repository encouraged collaboration and provided insight into how op
 
 ### Open Issues with Labels
 
-![Open Issues](screenshots/issues_overview.png)
+![Open Issues](screenshots/issue_labels.png)
 
