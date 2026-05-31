@@ -53,3 +53,19 @@
 - Configured Swagger UI at http://localhost:3000/docs
 - Added API and service layer tests
 - Updated GitHub Issues and project board progress
+
+  # Assignment 13 Updates
+
+## CI/CD Pipeline
+- Added GitHub Actions workflow for automated testing
+- Configured CI pipeline to run Jest tests on push and pull requests
+- Added automated artifact generation for main branch deployments
+
+## Branch Protection
+- Configured branch protection rules for the main branch
+- Enabled pull request reviews
+- Enabled required status checks before merging
+
+## Documentation
+- Added PROTECTION.md
+- Updated README with CI/CD instructions

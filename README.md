@@ -49,7 +49,8 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 | `src/` | Core system class implementations (Assignment 10) |
 | `creational_patterns/` | Implementation of all six creational design pattern |
 | `tests/` | Jest unit tests validating object creation |
-| `docs/` | Additional documentation |
+| `docs/openapi.yaml` |  |
+| `PROTECTION.md` | Assignment 13: Branch Protection |
 
 ---
 
@@ -71,6 +72,7 @@ This helps reduce unnecessary hospital visits while still allowing doctors to mo
 -  [Domain Model ](DOMAIN_MODEL.md)
 -  [Class Diagram ](CLASS_DIAGRAM.md)
 -  [Change Log ](CHANGELOG.md)
+-  [Branch Protection ](PROTECTION.md)
 
 
 ---
@@ -173,10 +175,201 @@ GET /api/patients
 }
 ```
 
+## REST API (Assignment 12)
+
+The Hospital Vital Monitoring System exposes RESTful API endpoints using Express.js.
+
+### Endpoints
+
+| Method | Endpoint | Description |
+|----------|----------|----------|
+| GET | /api/patients | Retrieve all patients |
+| GET | /api/patients/:id | Retrieve a patient by ID |
+| POST | /api/patients | Create a patient |
+| PUT | /api/patients/:id | Update a patient |
+| DELETE | /api/patients/:id | Delete a patient |
+
+### API Documentation
+
+Swagger UI:
+
+http://localhost:3000/docs
+
+The OpenAPI specification is stored in:
+
+docs/openapi.yaml
+
 ### Assignment 13
 
-CI/CD workflow test update
-New branck 'Assignment13'
+# Assignment 13 – CI/CD with GitHub Actions
+
+## Continuous Integration and Continuous Deployment (CI/CD)
+
+This project uses GitHub Actions to automate testing and artifact generation.
+
+The CI/CD pipeline helps ensure that:
+- All code changes are tested automatically
+- Pull requests are reviewed before merging
+- Broken code cannot be merged into the `main` branch
+- Release artifacts are generated automatically
+
+---
+
+## Branch Protection Rules
+
+Branch protection rules were configured for the `main` branch to improve code quality and maintain project stability.
+
+### Rules Applied
+- Require pull request reviews before merging
+- Require at least one approval review
+- Require status checks to pass before merging
+- Prevent direct pushes to the `main` branch
+- Block force pushes
+
+These protections help ensure that all code is reviewed and tested before deployment.
+
+---
+
+## CI Pipeline Features
+
+The GitHub Actions workflow automatically:
+
+- Runs on every push
+- Runs on every pull request targeting `main`
+- Installs project dependencies
+- Executes all unit and integration tests using Jest
+
+### Workflow File
+
+## Testing
+
+Testing is implemented using Jest.
+
+The project includes:
+
+- Unit tests
+- Repository tests
+- API endpoint tests
+- Service layer tests
+
+Run tests:
+
+npm test
+
+Generate coverage:
+
+npm test -- --coverage
+
+```text
+.github/workflows/ci.yml
+
+CD Pipeline Features
+
+The deployment pipeline automatically:
+
+Builds a release artifact after successful tests
+Generates a ZIP release package
+Uploads the artifact using GitHub Actions
+
+Generated artifact:
+hospital-api.zip
+
+Running Tests Locally
+
+Install dependencies:
+npm install
+
+Run tests:
+npm test
+
+Pull Request Workflow
+
+This project follows a pull request workflow where:
+
+Developers create a feature branch
+A pull request is opened against main
+GitHub Actions automatically runs tests
+Pull requests require approval before merging
+Code is merged only after all checks pass
+
+This workflow improves software quality and supports modern DevOps practices.
+
+```
+
+![Branch Protection](screenshots/Branch_Protection.png)
+![Testing](screenshots/Testing_PR_Protection.png)
+![Artifacts](screenshots/artifacts.png)
+![Tests](screenshots/run_tests.png)
+![Failing Tests](screenshots/PR_blocked_by_failing_tests.png)
+![Failed Workflow](screenshots/failed_workflow.png)
+
+## Getting Started
+
+### Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+* Node.js (v20 or later)
+* npm
+* Git
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/hospital-vital-monitoring-system.git
+cd hospital-vital-monitoring-system
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Application
+
+```bash
+npm start
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
+
+### Run Tests
+
+```bash
+npm test
+```
+
+### Generate Test Coverage Report
+
+```bash
+npm test -- --coverage
+```
+
+---
+
+## Features for Contribution
+
+The following features are planned for future development and are open for contribution.
+
+| Feature                        | Status         |
+| ------------------------------ | -------------- |
+| JWT Authentication             | Planned        |
+| Doctor Dashboard               | Planned        |
+| Email Notifications            | Planned        |
+| Patient Search Endpoint        | Planned        |
+| Improved API Validation        | Planned        |
+| Input Sanitization             | Planned        |
+| Vital Sign Alert System        | Planned        |
+| Mobile Application Support     | Future Release |
+| Real-Time Monitoring Dashboard | Future Release |
+| PostgreSQL Integration         | Future Release |
+
+Contributors are encouraged to review open issues, select a task, and submit a pull request following the guidelines in  [CONTRIBUTION.md](CONTRIBUTING.md)
 
 ## Author
 
