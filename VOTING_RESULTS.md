@@ -41,3 +41,14 @@ These interactions indicate interest in the project and demonstrate successful p
 ## Lessons Learned
 
 Sharing the repository encouraged collaboration and provided insight into how open-source projects attract contributors. Clear documentation, issue labels, and contribution guidelines make it easier for others to participate in development.
+
+## Repository Engagement Evidence
+
+### Stars and Forks
+
+![Stars and Forks](screenshots/stars_and_forks.png)
+
+### Open Issues with Labels
+
+![Open Issues](screenshots/issues_overview.png)
+
