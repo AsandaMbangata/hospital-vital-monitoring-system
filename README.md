@@ -369,7 +369,7 @@ The following features are planned for future development and are open for contr
 | Real-Time Monitoring Dashboard | Future Release |
 | PostgreSQL Integration         | Future Release |
 
-Contributors are encouraged to review open issues, select a task, and submit a pull request following the guidelines in  [CONTRIBUTION.md](CONTRIBUTION.md)
+Contributors are encouraged to review open issues, select a task, and submit a pull request following the guidelines in  [CONTRIBUTION.md](CONTRIBUTING.md)
 
 ## Author
 
