@@ -7,6 +7,23 @@ The goal of this system is to provide a simple platform for monitoring patient v
 
 ---
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [What This System Will Do](#what-this-system-will-do)
+- [Project Structure](#project-structure)
+- [Documentation](#documentation)
+- [Development Status](#development-status)
+- [Planned Technologies](#planned-technologies)
+- [Kanban Board](#kanban-board-assignment-7)
+- [Design Decisions](#design-decisions-assignment-10)
+- [Repository Layer](#repository-layer-assignment-11)
+- [REST API](#rest-api-assignment-12)
+- [CI/CD](#assignment-13--cicd-with-github-actions)
+- [Getting Started](#getting-started)
+- [Features for Contribution](#features-for-contribution)
+- [Author](#author)
+
 ## What This System Will Do
 
 Once completed, this system will enable:
@@ -124,9 +141,14 @@ Additional columns such as **Testing** and **Blocked** were introduced to improv
 - Tasks were assigned using GitHub’s assignment feature  
 - The board visually tracks task progress across all stages  
 
-### Screenshot
+### Screenshots
+
+#### Kanban Board
 ![Kanban Board](screenshots/custom_kanban_board.png)
-![Kanban Board](screenshots/custom_kanban_board_labels.png)
+
+#### Labels
+![Labels](screenshots/custom_kanban_board_labels.png)
+
 
 ## Design Decisions (Assignment 10)
 
@@ -193,15 +215,13 @@ The Hospital Vital Monitoring System exposes RESTful API endpoints using Express
 
 Swagger UI:
 
-http://localhost:3000/docs
+`http://localhost:3000/docs`
 
 The OpenAPI specification is stored in:
 
 docs/openapi.yaml
 
-### Assignment 13
-
-# Assignment 13 – CI/CD with GitHub Actions
+## Assignment 13 – CI/CD with GitHub Actions
 
 ## Continuous Integration and Continuous Deployment (CI/CD)
 
@@ -260,19 +280,20 @@ Generate coverage:
 
 npm test -- --coverage
 
-```text
-.github/workflows/ci.yml
+### Workflow File
 
-CD Pipeline Features
+`.github/workflows/ci.yml`
+
+### CD Pipeline Features
 
 The deployment pipeline automatically:
 
-Builds a release artifact after successful tests
-Generates a ZIP release package
-Uploads the artifact using GitHub Actions
+- Builds a release artifact after successful tests
+- Generates a ZIP release package
+- Uploads the artifact using GitHub Actions
 
 Generated artifact:
-hospital-api.zip
+`hospital-api.zip`
 
 Running Tests Locally
 
